@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Leadership Thread</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-section">
+                <img src="./assets/logo.png" alt="Logo" class="logo" />
+            </div>
+            <div class="user-info">
+                <div class="user-avatar"></div>
+                <span class="user-name">Dr. John Doe</span>
+                <div class="menu-icon">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                    </svg>
+                </div>
+                <div>
+                    <img src="./assets/dental.svg" alt="Logo" class="logo" />
+                </div>
+            </div>
+        </header>
+
+        <div class="form-container">
+            <h1 class="form-title">Create Your Profile</h1>
+
+            <form>
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <div class="form-row">
+                        <input type="text" class="form-input" placeholder="First Name" />
+                        <input type="text" class="form-input" placeholder="Last Name" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Contact Details</label>
+                    <div class="form-row">
+                        <input type="email" class="form-input" placeholder="Email" />
+                        <input type="tel" class="form-input" placeholder="Mobile No" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Select Primary Role:</label>
+                    <div class="form-row">
+                        <div>
+                            <label class="dropdown-label" style="color: #d4d1d1;">Role</label>
+                            <div class="custom-dropdown">
+                                <div class="selected" id="selectedText">
+                                    <span class="selected-text">Select</span>
+                                    <span class="arrow">&#9662;</span> <!-- ▼ -->
+                                </div>
+                                <ul class="dropdown-list hidden" id="dropdownList">
+                                    <li data-value="specialist">Specialist (Partner)</li>
+                                    <li data-value="partner">Partner</li>
+                                    <li data-value="associate">Associate</li>
+                                    <li data-value="hygienist">Hygienist</li>
+                                    <li data-value="practice-success-director">Practice Success Director</li>
+                                    <li data-value="strategic-growth-partner">Strategic Growth Partner</li>
+                                    <li data-value="treatment-consultant">Treatment Consultant</li>
+                                    <li data-value="custom-role">Custom Role</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div>
+                            <label class="dropdown-label" style="color:#d4d1d1;">Speciality Type</label>
+
+                            <div class="custom-dropdown">
+                                <div class="selected" id="deptSelectedText">
+                                    <span class="selected-text">Select</span>
+                                    <span class="arrow">&#9662;</span>
+                                </div>
+                                <ul class="dropdown-list hidden" id="deptDropdownList">
+                                    <li data-value="cardiology">Cardiology</li>
+                                    <li data-value="neurology">Neurology</li>
+                                    <li data-value="orthopedics">Orthopedics</li>
+                                    <li data-value="pediatrics">Pediatrics</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="checkbox-container">
+                        <input type="checkbox" class="checkbox" id="producer" />
+                        <label for="producer" style="color: #d4d1d1;" class="checkbox-label">Is this user a
+                            producer?</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Select Location</label>
+                        <div class="form-row">
+                            <div class="custom-dropdown">
+                                <div class="selected" id="countrySelectedText">
+                                    <span class="selected-text">Select</span>
+                                    <span class="arrow">&#9662;</span>
+                                </div>
+                                <ul class="dropdown-list hidden" id="countryDropdownList">
+                                    <li data-value="canada">Canada</li>
+                                    <li data-value="united-kingdom">United Kingdom</li>
+                                    <li data-value="australia">Australia</li>
+                                    <li data-value="india">India</li>
+                                </ul>
+                            </div>
+
+                            <div class="custom-dropdown">
+                                <div class="selected" id="stateSelectedText">
+                                    <span class="selected-text">Select</span>
+                                    <span class="arrow">&#9662;</span>
+                                </div>
+                                <ul class="dropdown-list hidden" id="stateDropdownList">
+                                    <li data-value="california">California</li>
+                                    <li data-value="new-york">New York</li>
+                                    <li data-value="texas">Texas</li>
+                                    <li data-value="florida">Florida</li>
+                                    <li data-value="illinois">Illinois</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="button" class="btn btn-cancel">Cancel</button>
+                        <button type="submit" class="btn btn-submit">Submit</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
